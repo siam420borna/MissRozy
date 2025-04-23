@@ -56,7 +56,7 @@ class Config(object):
 	LPCH_ADMIN_USRMN = os.environ.get("LPCH_ADMIN_USRMN")
 	LP_CUSTOM_TEMPLATE= os.environ.get("LP_CUSTOM_TEMPLATE")
   # LP_CUSTOM_TEMPLATE= os.environ.get("LP_CUSTOM_TEMPLATE","{file_name} - example \n\n Please Upadate this template acording to you @LazyDeveloperr ")
-	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1002589776901 -1001255795497").split()))
+	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1002674031223 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	AUTO_DELETE_TIME = int(os.environ.get('AUTO_DELETE_TIME', 20))
 

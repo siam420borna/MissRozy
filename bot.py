@@ -90,7 +90,12 @@ async def Lazy_start():
     except Exception as e:
         # Handle the exception, log it, and optionally take other actions
         print(e)  # Print the error for debugging
-        print(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
+        try:
+    db_channel = await Bot.get_chat(Config.DB_CHANNEL)
+except Exception as e:
+    print(f"[ERROR] DB_CHANNEL Invalid: {Config.DB_CHANNEL}")
+    print(str(e))
+    sys.exit()
         print("\nBot Stopped bYE")
         sys.exit()
     @Bot.on_message(filters.private)

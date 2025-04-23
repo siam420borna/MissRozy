@@ -40,7 +40,7 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH", "6777")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN","678")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "TeraBoxDownloader_rebot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1002545091234))
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002545091234"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "7862181538"))
 	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://sojib:sojib@cluster0.hfszr0v.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002545091234")
